@@ -5,6 +5,7 @@ import Grid from "./Components/Grid/grid";
 import Keys from "./Components/Keyboard/keyboard";
 
 function App() {
+  console.log("whole thing rerendered");
   return (
     <div
       style={{
