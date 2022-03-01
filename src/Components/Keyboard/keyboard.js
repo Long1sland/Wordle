@@ -3,42 +3,9 @@ import { Wrapper } from "./keyboard.styles";
 
 const Keys = () => {
   console.log("keys rerendered");
-  const handleKeyPress = (e) => {
-    const key = e.key;
-
-    if (key.match(/^[a-z]$/)) {
-      console.log(key.toUpperCase());
-    }
-    if (key === "Enter") {
-      console.log("this is the enter key");
-      return;
-    }
-    if (key === "Delete" || key === "Backspace") {
-      console.log("this is the delete key");
-      return;
-    }
-  };
-
-  document.addEventListener("keydown", handleKeyPress);
-  const handleClick = (e) => {
-    const key = e.target.innerText;
-    if (e.target.tagName !== "BUTTON") {
-      console.log("you're not clicking the right place");
-      return;
-    }
-    if (key === "Enter") {
-      console.log("this is the enter key");
-      return;
-    }
-    if (key === "Del") {
-      console.log("this is the delete key");
-      return;
-    }
-    console.log(key);
-  };
 
   return (
-    <Wrapper onClick={handleClick}>
+    <Wrapper>
       <button className="key">Q</button>
       <button className="key">W</button>
       <button className="key">E</button>
