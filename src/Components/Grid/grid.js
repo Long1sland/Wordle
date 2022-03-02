@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import useInputFetch from "../../useInputFetch";
 import { Wrapper, Tile, Content } from "./grid.styles";
 
@@ -37,8 +37,6 @@ const Grid = () => {
     "",
   ];
   const { tiles } = useInputFetch();
-
-  console.log(tiles);
 
   return (
     <Wrapper>
